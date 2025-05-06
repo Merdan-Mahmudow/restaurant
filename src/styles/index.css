@@ -1,0 +1,9 @@
+@import url(fonts.css);
+
+body, html {
+    background: url("../assets/bg.png") no-repeat;
+    background-size: cover;
+}
+.na_regular_font {
+    font-family: NextArt Regular;
+}
