@@ -1,5 +1,8 @@
 import { Box } from "@chakra-ui/react";
 import { Header } from "../Header";
+import { Outlet } from "@tanstack/react-router";
+import { Navbar } from "../Navbar";
+import { Navigation } from "../Navigation";
 
 export function Layout() {
     return (
@@ -13,9 +16,9 @@ export function Layout() {
             gridTemplateRows={"6em 4em 1fr 4em"}
         >
             <Header />
-            <Box bg={"red.600"}></Box>
-            <Box bg={"teal"}></Box>
-            <Box bg={"teal.500"}></Box>
+            <Navigation />
+            <Outlet />
+            <Navbar />
         </Box>
     )
 }

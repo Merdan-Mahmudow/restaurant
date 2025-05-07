@@ -1,4 +1,8 @@
 @font-face {
     font-family: "NextArt Regular";
-    src: url(/public/fonts/NextArt/NEXT\ ART_Regular.otf) format("opentype");
+    src: url(/fonts/NextArt/NEXT\ ART_Regular.otf) format("opentype");
+}
+@font-face {
+    font-family: "TerminatorGen";
+    src: url(/fonts/TerminatorGen/terminatorgen.otf) format("opentype");
 }
