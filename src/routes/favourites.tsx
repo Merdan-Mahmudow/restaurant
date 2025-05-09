@@ -8,8 +8,8 @@ export const Route = createFileRoute('/favourites')({
 
 function RouteComponent() {
   return (
-    <Box h={"full"}>
-      <EmptyContent title='Избранные пуста' text='Здесь пока, что ничего нету. Начните добавлять свои любимые блюда'/>
+    <Box h={"full"} backgroundColor={"white"}>
+      <EmptyContent title='Избранные пустые' text='Здесь пока, что ничего нету. Начните добавлять свои любимые блюда'/>
     </Box>
   )
 }

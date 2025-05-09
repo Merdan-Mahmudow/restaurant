@@ -1,4 +1,4 @@
-import { Heading, Text, VStack } from "@chakra-ui/react"
+import { Button, Heading, Text, VStack } from "@chakra-ui/react"
 
 type EmptyProps = {
     title: string
@@ -8,14 +8,16 @@ type EmptyProps = {
 
 export function EmptyContent({ title, text }: EmptyProps) {
     return (
-        <VStack textAlign={"center"} h={"full"} justifyContent={"center"}>
+        <VStack textAlign={"center"} h={"full"} justifyContent={"center"} gap={"7"}>
             <Heading
                 className="tg_font"
-                size={"2xl"}
+                size={"4xl"}
                 letterSpacing={"3px"}
+                color={"black"}
             >{title}</Heading>
 
-            <Text>{text}</Text>
+            <Text color={"black"} textTransform={"uppercase"}>{text}</Text>
+            <Button textTransform={"uppercase"} backgroundColor={"red.600"} color={"white"} borderRadius={"lg"}>На главную</Button>
         </VStack>
     )
 }
