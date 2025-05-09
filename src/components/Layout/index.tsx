@@ -7,8 +7,8 @@ import { Navigation } from "../Navigation";
 export function Layout() {
     return (
         <Box
-            w={"93%"}
-            h={"98%"}
+            w={"93vw"}
+            h={"98vh"}
             bg={"whiteAlpha.600"}
             roundedTop={"2em"}
             overflow={"hidden"}
@@ -17,7 +17,10 @@ export function Layout() {
         >
             <Header />
             <Navigation />
-            <Outlet />
+            <Box overflowY={"auto"}>
+                <Outlet />
+            </Box>
+            
             <Navbar />
         </Box>
     )
