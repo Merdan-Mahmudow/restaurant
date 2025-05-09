@@ -1,5 +1,5 @@
 import type { Product } from "@/types/interfaces";
-import { Box, Button, Card, IconButton, Image, Text } from "@chakra-ui/react";
+import { Button, Card, IconButton, Image, Text } from "@chakra-ui/react";
 import { useState } from "react";
 import { GoHeart, GoHeartFill } from "react-icons/go";
 import { Counter } from "../Counter";
