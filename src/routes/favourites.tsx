@@ -1,4 +1,5 @@
-import { Button, HStack, VStack } from '@chakra-ui/react'
+import { EmptyContent } from '@/components/Empty'
+import { Box } from '@chakra-ui/react'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/favourites')({
@@ -7,8 +8,8 @@ export const Route = createFileRoute('/favourites')({
 
 function RouteComponent() {
   return (
-    <VStack h={"full"} justifyContent={"center"}>
-      <Button>Click me!</Button>
-    </VStack>
+    <Box h={"full"}>
+      <EmptyContent title='Избранные пуста' text='Здесь пока, что ничего нету. Начните добавлять свои любимые блюда'/>
+    </Box>
   )
 }
