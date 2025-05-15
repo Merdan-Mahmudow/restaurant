@@ -23,7 +23,7 @@ export function ProductCard({ item }: ProductProps) {
             rounded={"3xl"}>
 
             <Image
-                src="https://avatars.mds.yandex.net/i?id=d1879b186f6f49f9bd7cb6cdf0cd83b7_l-11193111-images-thumbs&n=13"
+                src={item.image}
                 alt="Green double couch with wooden legs"
                 h={"10em"}
             />

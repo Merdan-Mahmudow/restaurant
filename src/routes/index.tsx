@@ -9,15 +9,16 @@ export const Route = createFileRoute('/')({
 function RouteComponent() {
 
   const [user, setUser] = useState<string>("")
-
+  const authed = localStorage.getItem("user") || ""
   const handleSaveUser = () => {
     localStorage.setItem("user", JSON.stringify({id: Math.floor(Math.random() * 100000), user: user}))
   }
 
   return (
     <HStack h={"full"}>
+      {authed === "" && 
       <Group attached w="full" maxW="sm">
-
+    
         <Input
           flex="1"
           placeholder="Введи свой Телеграм"
@@ -32,7 +33,7 @@ function RouteComponent() {
           Сохранить
         </Button>
 
-      </Group>
+      </Group>}
     </HStack>
   )
 }

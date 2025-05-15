@@ -1,5 +1,5 @@
 import { Categories } from '@/components/Categories'
-import { ProductCard } from '@/components/ProductCard'
+import { HProductCard } from '@/components/HProductCard'
 import { products } from '@/testDB'
 import { Box, Grid, Heading, Text } from '@chakra-ui/react'
 import { createFileRoute, useNavigate } from '@tanstack/react-router'
@@ -42,9 +42,9 @@ function RouteComponent() {
         <Text color={"grey"} fontSize={"sm"}>Принимаем заказы : ежедневно с 10:00 до 21:30</Text>
       </Box>
       <Categories onChangeCategory={handleChangeCategory} />
-      <Grid templateColumns={"1fr 1fr"} gap={"1em"} p={"1em"}>
+      <Grid>
         {products.map((item, index) => (
-          <ProductCard item={item} key={index}/>
+          <HProductCard item={item} key={index}/>
         ))}
       </Grid>
 

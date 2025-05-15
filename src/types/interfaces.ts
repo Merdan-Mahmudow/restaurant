@@ -10,3 +10,7 @@ export interface Product {
     price: number
     image: string
 }
+
+export interface FavouriteItem {
+    product_id: string
+}
